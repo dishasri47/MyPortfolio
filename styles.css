@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header .nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+header .nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header .intro h1 {
+    font-size: 3em;
+}
+
+header .intro p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.section {
+    padding: 80px 20px;
+    margin-top: 100px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#about {
+    background-color: #eee;
+}
+
+#skills {
+    background-color: #f1f1f1;
+}
+
+#experience {
+    background-color: #ddd;
+}
+
+#projects {
+    background-color: #eee;
+}
+
+#contact {
+    background-color: #f9f9f9;
+}
+
+ul.skills-list {
+    list-style-type: none;
+}
+
+ul.skills-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+form button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #9c4d99;
+}
